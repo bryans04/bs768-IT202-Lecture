@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Key Test</title>
+        <script>
+            function gotkey() {
+                var count = document.getElementById("text").value.length;
+                var output = "Character Count:" + count;
+                document.getElementById("status").innerHTML = output;
+            }
+        </script>
+    </head>
+    <body>
+        <h1>Testing for Keystroke</h1>
+        <p>Type something in the text box below:</p>
+        <textarea id="text" cols="50" rows="20" onkeyup="gotkey()"></textarea>
+        <p id="status"></p>
+    </body>
+</html>
