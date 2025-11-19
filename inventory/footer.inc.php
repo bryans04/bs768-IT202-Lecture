@@ -1,5 +1,5 @@
 <p>&copy Inventory Helper - Making Inventory Management Easier</p>
-<p>Name, Course & Section, Course Name, Assignment, bs768@njit.edu</p>
+<p>Bryan Sanchez, IT202, Internet Applications, bs768@njit.edu</p>
 <p>
    <?php
    date_default_timezone_set("America/New_York");
