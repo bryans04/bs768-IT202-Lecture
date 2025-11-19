@@ -1,4 +1,5 @@
 <?php
+ob_start();
 session_start();
 require_once("category.php");
 require_once("config.php");
@@ -34,3 +35,6 @@ require_once("item.php");
    </footer>
 </body>
 </html>
+<?php
+ob_end_flush();
+?>
