@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>Changing Properties with jQuery</title>
+    </head>
+</html>
+<style>
+    div {
+        background-color: yellow;
+    }
+</style>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js" 
+integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" 
+crossorigin="anonymous"></script>
+<script>
+    jQuery(document).ready(function(){
+        $("button").click(function(){
+            $("p").css("background-color", "red");
+            $("p").css("font-size", "50px");
+        });
+
+        $("button").click(function(){
+            $("h1").text("This is my new heading");
+            $("h1").css("color", "blue");
+            $("h1").css("font-family", "Arial");
+            $("h1").css("font-size", "40px");
+        })
+    });
+</script>
+<body>
+    <div id="container">
+    <h1> This is my heading</h1>
+    <p>
+    Bryan Sanchez, IT202, Unit 12 In-Class Exercise, bs768@njit.edu, 11/19
+    </p>
+    <p> This is some content. </p>
+    <button id="button"> Test Button</button>
+    </div>
+</body>
+</html>
